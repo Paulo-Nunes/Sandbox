@@ -1,1 +1,180 @@
 
+GIT:
+	-Steps involved in performing actions
+	-not git commands
+	-Purpose of branches
+	-Pull Requests
+	-Commits
+	-Staging
+	-Push/pull
+	*GIT-FLOW:
+		-
+	*FEATURE-FLOW:
+		-
+	
+MOTIVATION:
+	*DESIGN-PATTERNS:
+		-
+	*AUTOMATED-TESTING:
+		-
+	*UML
+		-
+
+KEY-OO-CONCEPTS:
+	-Visibility
+	-Abstraction
+	-Encapsulation
+	-Modularity
+	-Polymorphism
+	
+UML-CLASS-DIAGRAMS:
+	*VISIBILITY-NOTATION:(TODO Reorder in order of visibility)
+		-public
+		-private
+		-package
+		-protected
+	*INTERFACE-VS-CLASS:
+		-no attribute section on interface
+		-need to explicitly state <<INTERFACE>>
+	*RELATIONSHIPS:(TODO Add the images here )
+		-Aggregation
+		-Composition
+		-Navigability
+		-Dependency
+		*What is needed to show why a relationship exists:
+			-attributes
+			-methods
+			-explanation aggregation vs composition)
+
+UML-STATIC-VS-DYNAMIC:
+	*CLASS-VS-OBJECT:
+		-what is the difference
+		-which aspects of UML modelling address each
+	-Difference in modeling:
+		-Static:
+			Class diagram
+		-Dynamic:
+			-State
+			-Sequence
+	***Key Concept***
+		-Why do we have each???
+
+UML-SEQUENCE-DIAGRAMS
+	-Purpose
+	*What needs to be shown:
+		-Objects:
+			-showing concrete class or interface is fine if interchangeable 
+		-Call representations
+			-For return either solid or dotted line is fine
+		-Written on lines:
+			**Does this mean what is written on the lines? as in the methods being passes?(slide 8ish)**
+
+UML-STATE-DIAGRAM:
+	-Why do we have them?
+	-Concept does not map to object model
+	-State vs trigger:
+		-Transition trigger
+	-Nested state diagrams
+	
+JAVADOC:
+***Will not ask syntax for creating***
+	-Fair questions--What should be documented?
+		-Packages
+		-Classes
+		-Methods
+		-Attributes
+	-Goal of description of each
+	
+JAVA/OO-IMPLEMENTATION CONCEPTS:
+	-Purpose of package
+	*MEANING OF MODIFIERS/ WHEN USED:
+		-Static
+		-Final
+		-Abstract
+	*EXCEPTIONS:
+		-Acceptable use of Exceptions
+		-Hierarchy of Exceptions:
+			-given description, which type of error / exception:
+				-RuntimeException vs Other Exceptions
+		-Difference between checked vs unchecked exceptions
+	
+UNIT-TESTING:
+***Not be asked JUnit syntax
+	-Black box
+	-White box
+***KEY-CONCEPT***
+		-Difference between the two
+	-How do you come up with black box conditions
+	-How do you come up with white box conditions
+	*Given description or code segment, identify test condition:
+		-table we did on board
+			-description of test condition needed/expected result:
+				1. a=c, c=true, expected result exception raised
+				2. a>1. c=true, expected result return true
+	
+DESIGN-PATTERNS:
+	-What is a design pattern?
+	*CREATIONAL-PATTERNS:
+		-deal with process of creating objects
+	*STRUCTURAL-PATTERNS:
+		-deal primarily with the static composition and structure of classes and objects
+	*BEHAVIORAL-PATTERNS:
+		-deal primarily with dynamic interaction among classes and objects
+	-Know when you would use a particular design pattern and its benefits
+	-Be able to come up with an example application of that pattern that is not in the book or slides
+		-Explain why that is a good example	
+		-Draw UML for your example
+	-How would you code that pattern?
+		-semi pseudo code:
+			-some key aspects
+			-abstract/final/interface/checked exceptions
+	
+REFACTORING:
+	-Not a design pattern; an idea of analyzing model/code to make it better
+	*SPECIFIC-REFACTORING:
+		*Extracting commonality:
+			-Within class
+			-Inheritance
+			-Delegation
+				-why/when would you use it rather than inheritance???
+***Note: refactoring can result in design patterns***
+	--EX.: Refactoring commonality on Cake/Pizza resulted in Template pattern--
+	
+CHAIN-OF-RESPONSIBILITY:
+	*Intent: Avoid coupling class making request from class servicing:
+		-Reduced coupling
+		-Added flexibility
+		-But, receipt isn't guaranteed(i.e. bit guaranteed class will service(might not be caught))
+
+TEMPLATE:
+	-Common invariant functionality, concrete classes must provide key functionality via hooks
+	
+STRATEGY:
+	-Client coupled to interface, variants in interchangeable algorithms, client doesn't care about implementation
+	-Similar to template methods, but delegates implementation rather than relying on child implementation
+	
+SINGLETON:
+	-Want entire application to use a single instance of a class
+		-Unit testing dependent classes difficult due to global state
+		-Potential problems for parallel execution
+		
+*******SAMPLE-QUESTIONS*******
+		
+SHORT-ANSWER:
+	-What is the difference between encapsulation and modularity?
+	-What is the purpose of a package comment in Javadoc?
+
+UML:
+	-Create the UML class diagram for the following:
+		-Library has paperback and hardcover books; and employees
+		-Given a list of books an employee could be told to reshelf those books. An employee could either reshelf the books alphabetically by book title or alphabetically by author
+	-You should draw all relationships between the classes you define and the attribute/methods to support those relationships
+	
+ANSWER-THE-FOLLOWING
+	
+
+			
+		
+		
+		
+		
