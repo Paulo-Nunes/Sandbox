@@ -171,6 +171,38 @@ UML:
 	-You should draw all relationships between the classes you define and the attribute/methods to support those relationships
 	
 ANSWER-THE-FOLLOWING
+	-What design patterns is the TestTaker an example of and why>
+		-what is the purpose of the takeTest methods
+		-what is the purpose of Written and Spoken if no attribures/methods in class diagram?
+		-What can you say about where each method Blind has is implemented?
+		-If Test and TestTaker have the same functionality for writeCharavteristics why wouldn't you extract this to a super class?
+		-What refactoring pattern is CharacteristicWriter an example of?
+		-Why is the CharacteristicsHolder interface needed?
+		-Based on visibility, what can you say about how the CharacteristicWriter was refactored?
+		
+DYNAMIC-UML:
+	-Assume that there is a class Main which has a method that kicks off the whole process.
+		1. Creates a test and test taker(pick any type you want)
+		2. Tells the test taker to take the test
+		3. Tells the test taker to write its characteristics
+		Draw the sequence diagram fot the full execution of Main's method
+		
+READING-SEQUENCE-DIAGRAMS
+	-Assume methodA is public, methodB is protected, and methodC is package; and all take no arguments and don't return anything. What would be the signature of each method in Java
+	-Describe what this sequence diagram is showing(i.e Why would it be needed)
+
+DYNAMIC-UML	
+	-Draw the state diagram for a student taking a computer based test that must be submitted at the end. Initial state computer is off, end state computer off. Note the test is presented a question at time; do not need to consider computer crashing; computer may be initially unplugged.
+	-Draw a sequence diagram for this process
+	
+TESTING
+	-Given the signature/interface to a function:
+		-Identify the black box test conditions
+	-Given a function description and its implementation:
+		-Identify the black box test conditions
+		-Identify any white box test conditions
+		-You will be required to specify what type a specific test is
+
 	
 
 			
